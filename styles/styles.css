@@ -1,0 +1,67 @@
+@font-face {
+    font-family: AlmendraSC;
+    src: url(../fonts/AlmendraSC-Regular.ttf);
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #9c2e12;
+    --secondary-color: #f7c458;
+    --background-color: #f5eee3;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#logo {
+    padding-top: 48px;
+    align-self: stretch;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+h1#logo-heading{
+    font-family: 'AlmendraSC', sans-serif;
+    font-size: 4rem;
+    color: var(--background-color);
+    text-shadow: var(--primary-color) 0.2rem 0.2rem;
+    word-spacing: 0.5rem;
+    padding: 1rem;
+
+    span{
+        display: inline-block;
+        color: var(--primary-color);
+        text-shadow: none;
+        background-image: url(../images/icon-ox.png);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        padding-top: 35px;
+        padding-left: 50px;
+        text-align: center;
+        text-shadow: var(--background-color) -0.1rem 0.4rem;
+    }
+}
+
+#brand-panel{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/background-pipe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#attribution{
+    color: gray;
+    text-align: center;
+    a {
+        font-style: italic;
+        color: lightgray;
+        text-decoration: none;
+    }
+}
